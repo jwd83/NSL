@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dajpds4yjoyty"]
+
+[ext_resource type="Texture2D" uid="uid://dd37udte7g2qg" path="res://Assets/KenneyPixelVehiclePack/Cars/sports_tire.png" id="1_taw1b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ls1q2"]
+radius = 4.0
+
+[node name="Wheel" type="RigidBody2D" groups=["wheel"]]
+angular_damp = 5.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_taw1b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ls1q2")
